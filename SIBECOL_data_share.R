@@ -72,5 +72,7 @@ full_join(dat, share_name) %>% write_csv("data/sibecol_body.csv")
 
 cords <- read_csv("data/AMD_northing_easting.csv")
 
-cords %>% select(site, northing, easting) %>%
-  distinct() %>% write_csv("data/cords.csv")
+cords %>% 
+  select(site, northing, easting) %>%
+  distinct() %>% 
+  write_csv("data/cords.csv")
